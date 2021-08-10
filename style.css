@@ -59,12 +59,14 @@ header {
     color: #57B3FE;
     text-transform: uppercase;
     transition: .5s all ease;
+    border: 3px solid transparent;
 }
 
 .btn_get_started:hover {
     border: 3px solid #fff;
     color: #fff;
-    background: inherit;
+    background: transparent;
+    box-sizing: border-box;
 }
 
 .burger {
@@ -74,7 +76,7 @@ header {
 /*-------------------------------MENU TEXT-------------------------------*/
 
 .menu_text {
-    margin-top: 104px;
+    margin-top: 104px auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -191,6 +193,7 @@ header {
 .tp_process_text_wrapper {
     z-index: 100;
 }
+
 .img_top_left {
     position: absolute;
     top: 0;
@@ -264,7 +267,7 @@ header {
 
 .process_blocks {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     padding: 75px;
     width: 100%;
@@ -273,7 +276,8 @@ header {
 .process_block {
     display: flex;
     align-items: center;
-    /* justify-content: flex-start; */
+    width: 100%;
+    justify-content: flex-start;
     padding: 30px;
     background-color: #fff;
     z-index: 100;
@@ -326,9 +330,6 @@ header {
     color: #000;
 }
 
-
-
-
 /*---------------------------------BRANDS PAGE---------------------------------*/
 
 .brands_page {
@@ -340,7 +341,6 @@ header {
     margin: 0 auto;
 
 }
-
 
 .brands_header {
     text-align: center;
@@ -361,7 +361,7 @@ header {
 
 .brands_logos {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 32px;
@@ -421,6 +421,7 @@ header {
 .start_right_side {
     margin-left: 130px;
 }
+
 /*------------------------------------FOOTER------------------------------------*/
 
 footer {
@@ -510,8 +511,20 @@ hr {
     display: flex;
 }
 
+.footer_privacy > p, .privacy > p {
+    transition: .3s all ease;
+}
+
+.footer_privacy > p:hover {
+    color: gray;
+}
+
 .footer_privacy > p:first-child {
     margin-right: 25px;
+}
+
+.privacy > p:hover {
+    color: gray;
 }
 
 .privacy {
