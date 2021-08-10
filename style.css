@@ -785,7 +785,9 @@ hr {
 
     .brand_logo {
         width: 60%;
+        margin-left: 0;
     }
+    
 } 
 
 @media screen and (max-width: 400px){
