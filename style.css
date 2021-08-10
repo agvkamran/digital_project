@@ -163,8 +163,14 @@ header {
     border-radius: 15px;
     margin: 25px 15px;
     width: 30%;
+    cursor: pointer;
+    transition: 0.3s all ease;
 }
 
+.features_box:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
 
 .features_box_inner {
     margin: 20px;
@@ -283,6 +289,12 @@ header {
     z-index: 100;
     border-radius: 15px;
     flex-wrap: wrap;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.process_block:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .process_block:nth-child(n+1){
@@ -339,7 +351,6 @@ header {
 .brands {
     padding: 195px;
     margin: 0 auto;
-
 }
 
 .brands_header {
@@ -584,8 +595,31 @@ hr {
     .footer_nav_list {
         font-size: 0.8em;
     }
+
+    .brand_logo {
+        width: 28%;
+        margin-left: 40px;
+    }
+
+    .brands_logos > .brand_logo:last-child {
+        margin-top: 40px;
+    }
+    
+    .brands_footer {
+        margin-top: 50px;
+    }
+
 }
   
+
+@media screen and (max-width: 1200px) {
+    .brand_logo {
+        width: 40%;
+    }
+    .brands_logos > .brand_logo:last-child {
+        margin-top: 0;
+    }
+}
 
 @media screen and (max-width:900px) {
     
@@ -659,6 +693,11 @@ hr {
     .process_img_third {
         width: 90%;
     }
+
+    .brand_logo {
+        width: 38%;
+    }
+    
 }
 
 
@@ -730,9 +769,27 @@ hr {
     .process_left_side {
         padding-top: 25px;
     }
+
+    .brands_logos {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brands {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand_logo {
+        width: 60%;
+    }
 } 
 
 @media screen and (max-width: 400px){
+
     .process_left_side {
         padding-top: 0;
     }
